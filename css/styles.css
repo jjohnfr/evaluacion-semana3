@@ -1,0 +1,171 @@
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: dodgerblue;
+}
+
+.logout_btn {
+    padding: 5px;
+    background-color: dodgerblue;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sidebar {
+background-color:rgb(17,20,24);
+margin-top: 70px;
+padding-top: 30px;
+position: fixed;
+left: 0;
+width: 250px;
+height: 100%;
+transition: 0.5s;
+transition-property: left;
+box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.profile_image {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    margin: auto;
+    border: 5px solid withe;
+    background-color: gray;
+    background-image: url(../image/face.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 7px black;
+}
+
+.sidebar h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+
+.sidebar a:hover {
+    background-color: dodgerblue;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sibebar_btn:hover {
+    color: dodgerblue;
+}
+
+#check:checked ~ .sidebar {
+    left: -190px;
+}
+
+#check:checked ~.sidebar a span {
+    display: none;
+}
+
+#check:checked ~.sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.banner {
+    background: url(../image/wall.jpeg);
+    margin-left: 250px;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+    background-position: 0px 70px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+#check:checked ~ .banner {
+    margin-left: 60px;
+}
+
+#check {
+    display: none;
+}
+.container_cards {
+    background-color: #f0eeea;
+    margin-left: 250px;
+    padding: 20px;
+    height: 100vh;
+}
+.card {
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    background-color: white;
+    height: 100%;
+}
+
+.about_me {
+    background-color: #f0eeea;
+    margin: auto;
+    margin-left: 250px;
+    padding: 20px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.footerc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
